@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
 }
 
 .header, .hero-section {
@@ -24,6 +24,8 @@
 
 .hero-section {
     padding: 48px 144px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     gap: 72px;
 }
 
@@ -37,14 +39,19 @@
     color: #e5e7eb;
 }
 
-.hero-section .image {
+.hero-section .image-container {
     background-color: gray;
     display: flex;
-    padding: 18px;
     align-items: center;
     justify-content: center;
     width: 800px;
     height: 200px;
+}
+
+.hero-section .image-container .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-section .left-group {
@@ -65,4 +72,134 @@
     font-weight: 700;
     padding: 8px 24px;
     border-radius: 10px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    gap: 32px;
+}
+
+.info-section .heading {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.info-section .list {
+    display: flex;
+    gap: 48px;
+}
+
+.info-section .list .cell {
+    display: flex;
+    flex-direction: column;
+    width: 150;
+    gap: 4px;
+}
+
+.info-section .list .cell .image-container {
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgb(47, 125, 235);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.info-section .list .cell .image-container .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-section .list .cell .text {
+    width: 150px;
+    height: auto;
+    color: #1f2937;
+    text-align: justify;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.quote-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 740px;
+}
+
+.quote-section .text {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-section .author {
+    font-size: 28px;
+    color: #1f2937;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+.sign-up-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.sign-up-section .container {
+    background-color: #3882f6;
+    border-radius: 10px;
+    margin: auto;
+    width: 740px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+.sign-up-section .container .text .line-1 {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sign-up-section .container .text .line-2 {
+    color: white;
+}
+
+.sign-up-section .container .button {
+    color: white;
+    background-color: #3882f6;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-weight: 700;
+    padding: 0px 24px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #1f2937;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .copyright {
+    color: white;
 }

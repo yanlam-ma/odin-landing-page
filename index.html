@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,13 +24,57 @@
             <div class="secondary-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
             <button class="sign-up-button">Sign up</button>
         </div>
-        <div class="image">
-            <div class="placeholder-text">this is a placeholder for an image</div>
+        <div class="image-container">
+            <!-- <div class="placeholder-text">this is a placeholder for an image</div> -->
+            <img class="image" src="./images/pexels-alexasfotos-33917689.jpg">
         </div>
     </div>
-    <div class="info-section"></div>
-    <div class="quote-section"></div>
-    <div class="sign-up-section"></div>
-    <div class="footer"></div>
+    <div class="info-section">
+        <div class="heading">Some random information.</div>
+        <div class="list">
+            <div class="cell">
+                <div class="image-container">
+                    <img class="image" src="./images/pexels-karla-her-2294561-4428629.jpg">
+                </div>
+                <div class="text">this is some subtext under an illustration or image</div>
+            </div>
+            <div class="cell">
+                <div class="image-container">
+                    <img class="image" src="./images/pexels-n-voitkevich-7184409.jpg">
+                </div>
+                <div class="text">this is some subtext under an illustration or image</div>
+            </div>
+            <div class="cell">
+                <div class="image-container">
+                    <img class="image" src="./images/pexels-rebecca-1637573-5566042.jpg">
+                </div>
+                <div class="text">this is some subtext under an illustration or image</div>
+            </div>
+            <div class="cell">
+                <div class="image-container">
+                    <img class="image" src="./images/pexels-skylar-kang-6045195.jpg">
+                </div>
+                <div class="text">this is some subtext under an illustration or image</div>
+            </div>
+        </div>
+    </div>
+    <div class="quote-section">
+        <div class="container">
+            <div class="text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+            <div class="author">-Thor, God of Thunder</div>
+        </div>
+    </div>
+    <div class="sign-up-section">
+        <div class="container">
+            <div class="text">
+                <div class="line-1">Call to action! It's time!</div>
+                <div class="line-2">Sign up for our product by clicking that button right over there!</div>
+            </div>
+            <button class="button">Sign up</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">Copyright © The Odin Project 2021</div>
+    </div>
 </body>
 </html>
