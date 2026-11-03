@@ -97,7 +97,7 @@
 .info-section .list .cell {
     display: flex;
     flex-direction: column;
-    width: 150;
+    width: 150px;
     gap: 4px;
 }
 
